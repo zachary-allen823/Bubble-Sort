@@ -7,7 +7,7 @@ var words : [String] = []
 
 var line : String?
 repeat {
-    print("Please enter a word")
+
     line = readLine()
     if line != nil {
         words.append(line!)
@@ -29,7 +29,7 @@ func sort(integers: inout [String]) {
     // Keep track of the total passes
     var totalPassCount = 1
     var totalSwapCount = 0
-    print("Pass: 0, Swaps: 0/0, Array: \(integers)")
+
     // We continue until there are zero swaps in the current pass
     var swapsThisPass: Int
     repeat {
@@ -51,7 +51,7 @@ func sort(integers: inout [String]) {
         totalSwapCount += swapsThisPass
         // Add print statements
 
-        print("Pass: \(totalPassCount), Swaps: \(swapsThisPass)/\(totalSwapCount), Array: \(integers)")
+
 
         totalPassCount += 1
     } while swapsThisPass > 0
